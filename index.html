@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container-menuDesplegable">
+      <img class="abrir-menuDesplegable" id="abrirDesplegable" src="Imagenes/menu.png" alt="">
+    </div>
+
+    <div class="menuDesplegable" id="menuDesplegable"> <!-- nav -->
+      <span class="cerrar-menuDesplegable" id="cerrarDesplegable"><img src="imagenes/cerrar.png" alt=""></span>
+
+      <ul class="menu-list"> <!-- nav-list -->
+        <li><a href="#buttons"><img class="logosMenus" src="Imagenes/categoria.png" alt=""></a></li>
+        <img id="openModalBtn" class="logosMenus" src="Imagenes/crear.png" alt="">
+        <li><a href=""><img class="logosMenus" src="Imagenes/nosotros.png" alt=""></a></li>
+        <li><a href="footer"><img class="logosMenus" src="Imagenes/llamada.png" alt=""></a></li>
+      </ul>
+      <div class="copy">
+        <span>©Soff</span>
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeModalBtn">&times;</span>
+    
+        <div class="containerForm">
+          <form id="taskForm" class="formModal" action="">
+            <p class="tituloForm">Crea un producto</p>
+    
+            <input type="text" id="newProduct" placeholder="Nuevo Producto" class="botonForm tipoBoton" required>
+            <input type="text" id="newDescripcion" placeholder="Descripcion del producto:" class="botonForm tipoBoton" required>
+            <input type="text" id="newPrecio" placeholder="Precio:" class="botonForm tipoBoton">
+            <input type="url" id="newImageUrl" placeholder="URL de la imagen" class="botonForm tipoBoton">
+    
+            <label for="imageUpload">Subir imagen:</label>
+            <input type="file" id="imageUpload" accept="image/*">
+    
+            <button class="btn" type="submit">Agrega tu producto!!</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="editModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeEditModalBtn">&times;</span>
+        <h2>Editar Producto</h2><br>
+        <div>
+          <label for="editedTask"></label>
+          <input type="text" id="editedTask" placeholder="Editar tarea" class="botonForm tipoBoton">
+          <button id="saveEditButton" class="btn">Guardar Cambios</button>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <img class="logo" src="Imagenes/logo.png" alt="" href="index.html">
+    </div>
+
+    <nav>
+      <!-- Buscador -->
+      <div class="input__container">
+        <div class="shadow__input"></div>
+        <button class="input__button__shadow">
+          <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" height="20px" width="20px">
+            <path
+              d="M4 9a5 5 0 1110 0A5 5 0 014 9zm5-7a7 7 0 104.2 12.6.999.999 0 00.093.107l3 3a1 1 0 001.414-1.414l-3-3a.999.999 0 00-.107-.093A7 7 0 009 2z"
+              fill-rule="evenodd" fill="#17202A"></path>
+          </svg>
+        </button>
+        <input type="text" name="text" id="searchInput" id="buscador" placeholder="Buscar...">
+      </div>
+
+      <div class="container-icon">
+        <div class="container-cart-icon">
+          <img class="icon-cart" id="abrir" class="abrir" extends ParentClass { super() } src="Imagenes/bolsa.png"
+            alt="">
+          <div class="count-products">
+            <span id="contador-productos">0</span>
+          </div>
+        </div>
+        
+        <div class="container-cart-products hidden-cart" id="menuCart">
+
+          <div class="nav-menu">
+            <img src="Imagenes/cerrar.png" id="cerrar" class="cerrar" alt="">
+            <span>My Shoppig Cart</span>
+          </div>
+
+          <div class="prueba">
+            <div class="row-product hidden">
+              <div class="cart-product">
+                <div class="info-cart-product">
+                  <!--Div creado -->
+                </div>
+              </div>
+            </div>
+            
+            <div class="cart-total">
+              <h3>Total:</h3>
+              <h1>Subtotal de tus productos</h1>
+              <span class="total-pagar">$0</span>
+              <button class="clear-cart">Limpiar Carrito</button>
+            </div>
+
+          
+
+          </div>
+        
+         
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="text">
+    <span>Descubre Nuestra</span>
+    <h3>Nueva Coleccion</h3>
+    <button class="button-products" onclick="scrollToSection()">Productos!!</button>
+  </div>
+  
+  <section class="photoHeader">
+    <img src="Imagenes/header.jpg" alt="">
+  </section>
+
+  <div class="buttons" id="buttons">
+
+    <button class="button-value" id="button-all">All</button>
+    <button class="button-value" id="button-aretes">Aretes</button>
+    <button class="button-value" id="button-collares">Collares</button>
+    <button class="button-value" id="button-manillas">Manillas</button>
+
+  </div>
+
+  <div class="container-price">
+    <span>Ordenar precio por:
+    </span>
+
+    <div class="container-price2">
+      <img src="Imagenes/orden-ascendente.png" id="sort-ascending" alt="">
+      <img src="Imagenes/descendente.png" id="sort-descending" alt="">
+    </div>
+   
+  </div>
+
+
+
+  <!-- <div class="price-filters">
+    <label for="min-price">Precio Mínimo:</label>
+    <input type="number" id="min-price" placeholder="0" min="0">
+  
+    <label for="max-price">Precio Máximo:</label>
+    <input type="number" id="max-price" placeholder="9999" min="0">
+  
+     Botón de Aceptar -->
+    <!-- <button id="filter-button">Aceptar</button>
+  </div>  -->
+
+  <section class="all" id="productos">
+    <!-- <div class="card">
+
+          <div class="card-img">
+            <img src="Imagenes/photo1.png" alt="" class="photo">
+          </div>
+
+          <div class="card-info">
+            <p class="text-title">Aretes Redondos</p>
+            <p class="text-body">Product description and details</p>
+          </div>
+
+          <div class="card-footer">
+            <span class="text-title" class="price">$4</span>
+          <div class="card-button">
+
+          <img class="bagCards" data-id="1" src="Imagenes/bolsa.png" alt="">
+         </div>
+
+      </div>
+      </div> -->
+  </section>
+
+  <footer>
+    <a href="index.html"> <img class="logo" src="Imagenes/logo.png" alt=""></a>
+   
+    <p>-------- PAGINA ACCESORIOS ---------</p>
+
+    <div class="icon-footer">
+      <a href="https://l.instagram.com/?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%2F%3Fphone%3D3188086084%26text%26type%3Dphone_number%26app_absent%3D0&e=AT2dFp2kKPDuDd17U3GjZgufwPV2ftRK3IT3KU-k7VccJS5wnJOqqwuYGcXcRK4Qen3qPP1M1TZvyCEruQUndcCHBP-euBY21lCFudHKE42oY_WavNhRv8KkXPtG9Hz3wpOsVLw3IOnQPuLTf_7bCH-bYZt_">
+        <img class="iconFooter"src="Imagenes/telefono.png" alt="">
+      </a>
+      <a href="https://www.instagram.com/soff____20/">
+        <img class="logo" src="Imagenes/instagram.png" alt="">
+      </a>
+      
+    </div>
+    <p>©Soff</p>
+  </footer>
+
+
+</body>
+
+
+</html>
+<script src="ScriptsJs/Cards.js"></script>
+<script src="ScriptsJs/car.js"></script>
+<script src="ScriptsJs/menu.js"></script>
+<script src="ScriptsJs/searched.js"></script>
+<script src="ScriptsJs/MunuDesplegable.js"></script>
+<script src="ScriptsJs/NewProducto.js"></script>
+<script src="ScriptsJs/CallProducts.js"></script>
