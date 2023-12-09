@@ -1,6 +1,6 @@
 const container = document.querySelector('.all')
 
-// Array de productos
+// Array de productos de la pagina web
 const product = [
   {
     title: 'Aretes Redondos',
