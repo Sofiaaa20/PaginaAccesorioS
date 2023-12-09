@@ -27,7 +27,7 @@ const product = [
     stock:10,   
   },
   {
-    title: 'Aretes',
+    title: 'Arete Hueso',
     description: 'Aretes Dorados',
     price: 20000,
     category: "Aretes",
@@ -35,7 +35,7 @@ const product = [
     stock:10,   
   },
   {
-    title: 'Aretes',
+    title: 'Aretes Cadena',
     description: 'Aretes Dorados',
     price: 40000,
     category: "Aretes",
@@ -43,7 +43,7 @@ const product = [
     stock:10,   
   },
   {
-    title: 'Aretes',
+    title: 'Aretes Gota de Agua',
     description: 'Aretes Dorados',
     price: 36000,
     category: "Aretes",
@@ -53,7 +53,7 @@ const product = [
 
 
   {
-    title: 'Aretes',
+    title: 'Aretes Corazon',
     description: 'Aretes Dorados',
     price: 25000,
     category: "Aretes",
@@ -61,7 +61,7 @@ const product = [
     stock:10,   
   },
   {
-    title: 'Aretes',
+    title: 'Aretes Aro',
     description: 'Aretes Dorados',
     price: 20000,
     category: "Aretes",
@@ -71,7 +71,7 @@ const product = [
 
 
   {
-    title: 'Aretes Plateados',
+    title: 'Aretes laso',
     description: 'Aretes Plateados',
     price: 26000,
     category: "Aretes",
@@ -79,7 +79,7 @@ const product = [
     stock:10,   
   },
   {
-    title: 'Aretes',
+    title: 'Aretes Agollados',
     description: 'Aretes Plateados',
     price: 30000,
     category: "Aretes",
@@ -87,7 +87,7 @@ const product = [
     stock:10,   
   },
   {
-    title: 'Aretes',
+    title: 'Aretes Argollado Mini',
     description: 'Aretes Plateados',
     price: 30000,
     category: "Aretes",
@@ -95,7 +95,7 @@ const product = [
     stock:10,   
   },
   {
-    title: 'Aretes',
+    title: 'Aretes Conchas',
     description: 'Aretes Plateados',
     price: 28000,
     category: "Aretes",
@@ -103,7 +103,7 @@ const product = [
     stock:10,   
   },
   {
-    title: 'Aretes',
+    title: 'Aretes Nudo',
     description: 'Aretes Plateados',
     price: 28000,
     category: "Aretes",
@@ -111,7 +111,7 @@ const product = [
     stock:10,   
   },
   {
-    title: 'Aretes',
+    title: 'Aretes Nudo Mini',
     description: 'Aretes Plateados',
     price: 28000,
     category: "Aretes",
@@ -120,7 +120,7 @@ const product = [
   },
 
   {
-    title: 'Aretes',
+    title: 'Aretes Nudo Mini',
     description: 'Aretes Plateados',
     price: 28000,
     category: "Aretes",
@@ -128,7 +128,7 @@ const product = [
     stock:10,   
   },
   {
-    title: 'Aretes Plateados',
+    title: 'Aretes Arco',
     description: 'Aretes Plateados',
     price: 28000,
     category: "Aretes",
@@ -137,7 +137,7 @@ const product = [
   }
   ,
   {
-    title: 'Aretes Plateados',
+    title: 'Candongas Perlas',
     description: 'Aretes Plateados',
     price: 30000,
     category: "Aretes",
@@ -148,7 +148,7 @@ const product = [
 
   ,
   {
-    title: 'Collar',
+    title: 'Collar Perlas Blancas',
     description: 'Collar',
     price: 30000,
     category: "Collares",
@@ -157,7 +157,7 @@ const product = [
   }
   ,
   {
-    title: 'Collar',
+    title: 'Collar Perlas Doradas',
     description: 'Collar',
     price: 30000,
     category: "Collares",
@@ -173,7 +173,7 @@ const product = [
     stock:10,   
   },
   {
-    title: 'Collar',
+    title: 'Collar De piedras',
     description: 'Collar',
     price: 30000,
     category: "Collares",
@@ -181,7 +181,7 @@ const product = [
     stock:10,   
   },
   {
-    title: 'Collar',
+    title: 'Collar Cadena Perlas',
     description: 'Collar',
     price: 30000,
     category: "Collares",
@@ -189,7 +189,7 @@ const product = [
     stock:10,   
   } ,
   {
-    title: 'Collar',
+    title: 'Collar Esmeraldas',
     description: 'Collar',
     price: 30000,
     category: "Collares",
@@ -197,7 +197,7 @@ const product = [
     stock:10,   
   } ,
   {
-    title: 'Collar',
+    title: 'Collar Perlas Mini',
     description: 'Collar',
     price: 30000,
     category: "Collares",
@@ -205,7 +205,7 @@ const product = [
     stock:10,   
   },
   {
-    title: 'Collar',
+    title: 'Collar Perlas y Cadena',
     description: 'Collar',
     price: 30000,
     category: "Collares",
@@ -216,7 +216,7 @@ const product = [
 
   ,
   {
-    title: 'Manillas',
+    title: 'Manillas Perlas Blancas',
     description: 'Manilla',
     price: 30000,
     category: "Manillas",
@@ -226,7 +226,7 @@ const product = [
 
   ,
   {
-    title: 'Manillas',
+    title: 'Manillas Mini Perlas',
     description: 'Manilla',
     price: 30000,
     category: "Manillas",
@@ -236,7 +236,7 @@ const product = [
 
   ,
   {
-    title: 'Manillas',
+    title: 'Manillas Cristo',
     description: 'Manilla',
     price: 30000,
     category: "Manillas",
@@ -245,7 +245,7 @@ const product = [
   } ,
   ,
   {
-    title: 'Manillas',
+    title: 'Manillas Lazo De amor',
     description: 'Manilla',
     price: 30000,
     category: "Manillas",
@@ -254,7 +254,7 @@ const product = [
   } ,
   ,
   {
-    title: 'Manillas',
+    title: 'Manillas Perlas ',
     description: 'Manilla',
     price: 30000,
     category: "Manillas",
@@ -263,7 +263,7 @@ const product = [
   } ,
   ,
   {
-    title: 'Manillas',
+    title: 'Manillas De perlas',
     description: 'Manilla',
     price: 30000,
     category: "Manillas",
